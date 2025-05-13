@@ -1,0 +1,123 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #4f6b58;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Fondo de la página con imagen */
+.header {
+    background: url('https://via.placeholder.com/1500') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: #20228d;
+}
+
+.header .title-container {
+    animation: moverTexto 6s linear infinite;
+}
+
+.texto-movimiento {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Animación de texto */
+@keyframes moverTexto {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Estilo del contenido principal */
+.main-container {
+    padding: 20px;
+    background: #db8f8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+/* Estilo del título principal */
+h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Descripción del evento */
+.description {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.description h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para la imagen */
+.image-container {
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de videos */
+.video-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 315px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header {
+        padding: 40px 0;
+    }
+
+    .texto-movimiento {
+        font-size: 2.5rem;
+    }
+
+    .main-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+    }
+}

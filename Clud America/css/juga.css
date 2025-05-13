@@ -1,0 +1,110 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffb80;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Título animado */
+.header {
+    background-color: #003d73;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.title-container {
+    animation: moverTexto 5s linear infinite;
+}
+
+.texto-movimiento {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animación de texto */
+@keyframes moverTexto {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Estilos del contenedor principal */
+.main-container {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Estilo para cada sección de jugador */
+.jugador {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f5b9b9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.jugador h2 {
+    color: #003d73;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Contenedor de imágenes */
+.image-container {
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los párrafos */
+.jugador p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .texto-movimiento {
+        font-size: 2rem;
+    }
+
+    .jugador h2 {
+        font-size: 1.5rem;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+}
+
